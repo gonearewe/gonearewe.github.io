@@ -60,7 +60,9 @@ groupmod -n username pi
 id username
 发现uid,pid都没有变，但是显示的名称都已经变了
 
-
+在树莓派上面安装samba，配置好【homes】选单可读可写后，在电脑cmd中输入
+start //:192.168.137.2（树莓派的IP地址）
+就会跳出窗口，选择映射网络驱动器即可在资源管理器中查看，修改树莓派中的用户home目录中的文件
 
 
 @end
