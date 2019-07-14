@@ -1,10 +1,10 @@
 # Site settings
 title: Mactavish
 SEOTitle: 我的博客 | BY Blog
-header-img: img/post-bg-desk.jpg
+header-img: img/post-bg-tomb-raider.jpg
 email: cristmactavish@outlook.com
 description: "Frozen is my soul,Darkness is the forest."
-keyword: "STUDY, BY Blog, 我的博客, gonearewe, crist mactavish, Linux, Arm, C Coding"
+keyword: "STUDY, 我的博客, gonearewe, crist mactavish, Linux, Arm, C Coding"
 url: "http://gonearewe.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/gonearewe/gonearewe.github.io.git" # you code repository
@@ -12,7 +12,7 @@ github_repo: "https://github.com/gonearewe/gonearewe.github.io.git" # you code r
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Life is nothing more than a pure flame!"
-sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/about-me.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 

@@ -4,7 +4,7 @@ title:      烧录Raspbian并通过SSH初次连接树莓派
 subtitle:   树莓派的初始配置
 date:       2019-06-21
 author:     John Mactavish
-header-img: img/post-bg-ios9-web.jpg
+header-img: img/post-bg-lake-clouds.jpg
 catalog: true
 tags:
     - 树莓派

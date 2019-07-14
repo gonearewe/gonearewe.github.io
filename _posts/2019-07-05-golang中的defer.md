@@ -4,7 +4,7 @@ title:      golang中的defer
 subtitle:   defer和匿名函数详解
 date:       2019-07-05
 author:     John Mactavish
-header-img: img/post-bg-ios9-web.jpg
+header-img: img/post-bg-aquatic-corals.jpg
 catalog: true
 tags:
     - defer
