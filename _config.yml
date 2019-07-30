@@ -1,6 +1,6 @@
 # Site settings
 title: Mactavish
-SEOTitle: 我的博客 | BY Blog
+SEOTitle: 我的博客 
 header-img: img/home-bg-bay-bridge.jpg
 email: cristmactavish@outlook.com
 description: "Frozen is my soul,Darkness is the forest."
@@ -100,16 +100,13 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "WY",
-        href: "http://zhengwuyang.com"
+        title: "GO语言中文",
+        href: "http://docscn.studygolang.com/"
     },{
-        title: "简书·BY",
-        href: "http://www.jianshu.com/u/e71990ada2fd"
+        title: "菜鸟教程",
+        href: "https://www.runoob.com/"
     },{
-        title: "Apple",
-        href: "https://apple.com"
-    },{
-        title: "Apple Developer",
-        href: "https://developer.apple.com/"
+        title: "Github",
+        href: "https://github.com/"
     }
 ]
