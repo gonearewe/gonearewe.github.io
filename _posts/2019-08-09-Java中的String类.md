@@ -39,8 +39,52 @@ tags:
 
 &emsp;&emsp;可以看出，因为字符串是常量，所以拷贝引用是无所谓的。但是使用new关键字的话，就会在堆中创建一个。
 
+# String的传递
+
+&emsp;&emsp;首先在Java中需要明确一下以下几点：
+
+1. 基本类型都是值传递，对象都是引用传递。对象变量保存的是对象的地址。
+2. 对于基本类型 ，赋值运算符会直接改变变量的值，原来的值被覆盖掉。对于引用类型，赋值运算符会改变引用中所保存的地址，原来的地址被覆盖掉，但是原来的对象不会被改变。（没有被任何引用所指向的对象是垃圾，会被垃圾回收器回收）
+3. 调用方法时参数传递基本上就是赋值操作。在方法内部生成一个参数变量的副本。
+
+<pre>
+//第一个例子：基本类型
+void foo(int value) {
+    value = 100;
+}
+foo(num); // num 没有被改变
+
+//第二个例子：没有提供改变自身方法的引用类型
+void foo(String text) {
+    text = "windows";
+}
+foo(str); // str 也没有被改变
+
+//第三个例子：提供了改变自身方法的引用类型
+StringBuilder sb = new StringBuilder("iphone");
+void foo(StringBuilder builder) {
+    builder.append("4");
+}
+foo(sb); // sb 被改变了，变成了"iphone4"。
+
+//第四个例子：提供了改变自身方法的引用类型，但是不使用，而是使用赋值运算符。
+StringBuilder sb = new StringBuilder("iphone");
+void foo(StringBuilder builder) {
+    builder = new StringBuilder("ipad");
+    //new在堆中创建对象，同时生成一个该对象的引用
+}
+foo(sb); // sb 没有被改变，还是 "iphone"。
+</pre>
+
+>对于其他的类都是适用的。    
+>当我们声明一个数组时，如int[] arr = new int[10]，因为数组也是对象，arr实际上是引用，stack上仅仅占用4字节空间，new int[10]会在heap中开辟一个数组对象，然后arr指向它。   
+>当然，数组的元素是基本类型的话，传递元素还是值传递。
+
+
 # String的相关操作
+
 ## 获取长度
+
 <pre>
 //方法原型
 public int length(){
@@ -133,6 +177,8 @@ replace(int start, int end, String s)	|StringBuffer|	使用一组字符替换另
 &emsp;&emsp;当我们```从文件中读数据时，最好使用InputStream方式，然后采用String(byte[] bytes, String encoding)指明文件的编码方式。不要使用Reader方式```，因为Reader方式会自动根据jdk指明的编码方式把文件内容转换成unicode 编码。 
 
 # 参考
+
+>[Intopass的知乎回答](https://www.zhihu.com/question/31203609)
 >[梦魇秦歌关于Java编码的讲解](https://blog.csdn.net/mengyan4632/article/details/6442548)  
 >[Nuub 关于Java编码的讲解](https://blog.csdn.net/sugar_rainbow/article/details/76945323)  
 >[Kikityer 的CSDN博客](https://blog.csdn.net/weixin_40581455/article/details/85223091)    
