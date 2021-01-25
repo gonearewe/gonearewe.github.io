@@ -23,6 +23,6 @@ To sum up, the hot short videos do bring some harm and challenges to our life, b
 ---
 如果你喜欢我的文章，请我吃根冰棒吧  (o゜▽゜)o ☆
 
-![contribution](https://github.com/gonearewe/gonearewe.github.io/blob/master/img/contribution.jpg)
+![contribution](https://raw.githubusercontent.com/gonearewe/gonearewe.github.io/master/img/contribution.jpg)
 
 > 最后附上 GitHub：<https://github.com/gonearewe>
