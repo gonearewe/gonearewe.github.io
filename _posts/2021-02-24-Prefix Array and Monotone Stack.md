@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Prefix Array and Monotone Stack
-subtitle:   Common Algorithms Template Series
+subtitle:   Common Algorithms Template Series (8)
 date:       2021-02-24
 author:     John Mactavish
 header-img: img/post-bg-panzer-ice-ruins-city.jpg
