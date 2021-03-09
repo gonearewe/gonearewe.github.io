@@ -142,4 +142,4 @@ class Solution:
 >
 > [LeetCode Solution by "huangyt"](https://leetcode-cn.com/problems/maximum-width-ramp/solution/dan-diao-di-jian-zhan-on-by-huangyt/)
 >
-> My GitHub Account：<https://github.com/gonearewe>
+> My GitHub Accountï¼š<https://github.com/gonearewe>
