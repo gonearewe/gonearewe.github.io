@@ -9,6 +9,7 @@ catalog: true
 tags:
      - Java
 	 - 并发
+
 ---
 
 synchronized 是 Java 中加锁的关键字，当它锁定一个方法或者一个代码块的时候，同一时刻最多只有一个线程可以执行这段代码。
