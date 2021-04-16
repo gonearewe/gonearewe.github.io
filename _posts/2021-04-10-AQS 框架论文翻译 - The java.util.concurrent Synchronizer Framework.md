@@ -406,4 +406,8 @@ return (t > 0) ? t : t + 0x7fffffff;
 
 ---
 
+> 推荐阅读：
+> 
+> [从ReentrantLock的实现看AQS的原理及应用](https://tech.meituan.com/2019/12/05/aqs-theory-and-apply.html)
+
 > 最后附上 GitHub：<https://github.com/gonearew
