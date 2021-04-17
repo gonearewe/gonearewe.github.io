@@ -1,15 +1,15 @@
 ---
 layout:     post
-title:      AQS 框架论文翻译 - The java.util.concurrent Synchronizer Framework
-subtitle:   `Java` 并发原理系列（二）
+title:      AQS 框架论文翻译 —— The java.util.concurrent Synchronizer Framework
+subtitle:   Java 并发原理系列（二）
 date:       2021-04-10
 author:     John Mactavish
 header-img: img/post-bg-battlefield-snow-warrior.jpg
 catalog: true
 tags:
-     - `Java`
-	 - 并发
-
+     - Java
+     - 并发
+     
 ---
 
 原论文地址：<http://gee.cs.oswego.edu/dl/papers/aqs.pdf>
