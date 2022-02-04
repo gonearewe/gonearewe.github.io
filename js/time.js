@@ -4,9 +4,10 @@ function setTimeInRainEffect(){
      'Thursday', 'Friday', 'Saturday'][date.getDay()];
     let monthName = ["January", "February", "March", "April", "May", "June",
      "July", "August", "September", "October", "November", "December"][date.getMonth()];
-     
-    $(".slide__element--date").
-    text(dayName+', '+date.getDate()+' of '+monthName+' '+date.getFullYear());
+    let text = dayName+', '+date.getDate()+' of '+monthName+' '+date.getFullYear();
+    
+    let els= document.getElementsByClassName("slide__element--date");
+    [].forEach.call(els, function (el) {el.innerText = text});
 }
 
 setTimeInRainEffect();
