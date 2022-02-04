@@ -3,8 +3,6 @@ layout: default
 ---
 
 <!-- Page Header -->
-<script src="js/rain.min.js"></script>
-<script src="js/time.js"></script>
 <header class="demo-1">
     <div class="image-preload">
 		<img src="img/drop-color.png" alt="">
@@ -20,15 +18,17 @@ layout: default
 	</div>
     <div>
 		<div class="slideshow">
-			<canvas width="1" height="1" id="container" style="position:absolute;width: 100%;height: 100%;"></canvas>
+			<canvas width="1" height="1" id="container" 
+                style="position:absolute;width: 100%;width: 100vw;height: 100vh;">
+            </canvas>
 			<!-- Heavy Rain -->
 			<div class="slide" id="slide-1" data-weather="rain">
-				<div class="slide__element slide__element--date">Sunday, 24<sup>th</sup> of October 2043</div>
+				<div class="slide__element slide__element--date">Sunday, 24 of October 2043</div>
 				<div class="slide__element slide__element--temp">12°<small>C</small></div>
 			</div>
 			<!-- Drizzle -->
 			<div class="slide" id="slide-2" data-weather="drizzle">
-				<div class="slide__element slide__element--date">Saturday, 25<sup>th</sup> of October 2043</div>
+				<div class="slide__element slide__element--date">Saturday, 25 of October 2043</div>
 				<div class="slide__element slide__element--temp">18°<small>C</small></div>
 			</div>
 			<!-- Sunny -->
