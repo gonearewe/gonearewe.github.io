@@ -8,8 +8,8 @@ function fitToContainer(canvas){
   canvas.style.width ='100%';
   canvas.style.height='100%';
   // ...then set the internal size to match
-  canvas.width  = canvas.offsetWidth;
-  canvas.height = canvas.offsetHeight;
+//   canvas.width  = canvas.offsetWidth;
+//   canvas.height = canvas.offsetHeight;
 }
 
 window.addEventListener('resize', function(event){
@@ -17,6 +17,8 @@ window.addEventListener('resize', function(event){
   fitToContainer(canvas);
 });
 </script>
+<script src="js/rain.min.js"></script>
+<script src="js/time.js"></script>
 
 <!-- Page Header -->
 <header class="demo-1">
