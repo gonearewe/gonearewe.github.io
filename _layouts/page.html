@@ -3,6 +3,8 @@ layout: default
 ---
 
 <!-- Page Header -->
+<script src="js/rain.min.js"></script>
+<script src="js/time.js"></script>
 <header class="demo-1">
     <div class="image-preload">
 		<img src="img/drop-color.png" alt="">
@@ -16,21 +18,9 @@ layout: default
 		<img src="img/weather/texture-drizzle-fg.png" />
 		<img src="img/weather/texture-drizzle-bg.png" />
 	</div>
-	<div class="container">
-		<header class="codrops-header">
-			<div class="codrops-links">
-				<a class="codrops-icon codrops-icon--prev" href="http://tympanus.net/Development/CardStackEffects/" title="Previous Demo"><span>Previous Demo</span></a>
-				<a class="codrops-icon codrops-icon--drop" href="http://tympanus.net/codrops/?p=25417" title="Back to the article"><span>Back to the Codrops article</span></a>
-			</div>
-			<h1>Rain &amp; Water Effects</h1>
-			<nav class="codrops-demos">
-				<a class="current-demo" href="index.html">Weather</a>
-				<a href="index2.html">Water</a>
-				<a href="index3.html">Video</a>
-			</nav>
-		</header>
+    <div>
 		<div class="slideshow">
-			<canvas width="1" height="1" id="container" style="position:absolute"></canvas>
+			<canvas width="1" height="1" id="container" style="position:absolute;width: 100%;height: 100%;"></canvas>
 			<!-- Heavy Rain -->
 			<div class="slide" id="slide-1" data-weather="rain">
 				<div class="slide__element slide__element--date">Sunday, 24<sup>th</sup> of October 2043</div>
@@ -43,25 +33,25 @@ layout: default
 			</div>
 			<!-- Sunny -->
 			<div class="slide" id="slide-3" data-weather="sunny">
-				<div class="slide__element slide__element--date">Monday, 26<sup>th</sup> of October 2043</div>
+				<div class="slide__element slide__element--date">Monday, 26 of October 2043</div>
 				<div class="slide__element slide__element--temp">25°<small>C</small></div>
 			</div>
 			<!-- Heavy rain -->
 			<div class="slide" id="slide-5" data-weather="storm">
-				<div class="slide__element slide__element--date">Wednesday, 28<sup>th</sup> of October 2043</div>
+				<div class="slide__element slide__element--date">Wednesday, 28 of October 2043</div>
 				<div class="slide__element slide__element--temp">20°<small>C</small></div>
 			</div>
 			<!-- Fallout (greenish overlay with slightly greenish/yellowish drops) -->
 			<div class="slide" id="slide-4" data-weather="fallout">
-				<div class="slide__element slide__element--date">Tuesday, 27<sup>th</sup> of October 2043</div>
+				<div class="slide__element slide__element--date">Tuesday, 27 of October 2043</div>
 				<div class="slide__element slide__element--temp">34°<small>C</small></div>
 			</div>
 			<nav class="slideshow__nav">
-				<a class="nav-item" href="#slide-1"><i class="icon icon--rainy"></i><span>10/24</span></a>
-				<a class="nav-item" href="#slide-2"><i class="icon icon--drizzle"></i><span>10/25</span></a>
-				<a class="nav-item" href="#slide-3"><i class="icon icon--sun"></i><span>10/26</span></a>
-				<a class="nav-item" href="#slide-5"><i class="icon icon--storm"></i><span>10/28</span></a>
-				<a class="nav-item" href="#slide-4"><i class="icon icon--radioactive"></i><span>10/27</span></a>
+				<a class="nav-item" href="#slide-1"><i class="r-icon icon--rainy"></i><span>10/24</span></a>
+				<a class="nav-item" href="#slide-2"><i class="r-icon icon--drizzle"></i><span>10/25</span></a>
+				<a class="nav-item" href="#slide-3"><i class="r-icon icon--sun"></i><span>10/26</span></a>
+				<a class="nav-item" href="#slide-5"><i class="r-icon icon--storm"></i><span>10/28</span></a>
+				<a class="nav-item" href="#slide-4"><i class="r-icon icon--radioactive"></i><span>10/27</span></a>
 			</nav>
 		</div>
 		<p class="nosupport">Sorry, but your browser does not support WebGL!</p>
