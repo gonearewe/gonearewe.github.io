@@ -17,22 +17,22 @@ window.addEventListener('resize', function(event){
   fitToContainer(canvas);
 });
 </script>
-<script src="js/rain.min.js"></script>
-<script src="js/time.js"></script>
+<script src="{{ "/js/rain.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/time.js" | prepend: site.baseurl }}"></script>
 
 <!-- Page Header -->
 <header class="demo-1">
     <div class="image-preload">
-		<img src="img/drop-color.png" alt="">
-		<img src="img/drop-alpha.png" alt="">
-		<img src="img/weather/texture-rain-fg.png" />
-		<img src="img/weather/texture-rain-bg.png" />
-		<img src="img/weather/texture-sun-fg.png" />
-		<img src="img/weather/texture-sun-bg.png" />
-		<img src="img/weather/texture-fallout-fg.png" />
-		<img src="img/weather/texture-fallout-bg.png" />
-		<img src="img/weather/texture-drizzle-fg.png" />
-		<img src="img/weather/texture-drizzle-bg.png" />
+		<img src="{{ "/img/drop-color.png" | prepend: site.baseurl }}" alt="">
+		<img src="{{ "/img/drop-alpha.png" | prepend: site.baseurl }}" alt="">
+		<img src="{{ "/img/weather/texture-rain-fg.png" | prepend: site.baseurl }}" />
+		<img src="{{ "/img/weather/texture-rain-bg.png" | prepend: site.baseurl }}" />
+		<img src="{{ "/img/weather/texture-sun-fg.png" | prepend: site.baseurl }}" />
+		<img src="{{ "/img/weather/texture-sun-bg.png" | prepend: site.baseurl }}" />
+		<img src="{{ "/img/weather/texture-fallout-fg.png" | prepend: site.baseurl }}" />
+		<img src="{{ "/img/weather/texture-fallout-bg.png" | prepend: site.baseurl }}" />
+		<img src="{{ "/img/weather/texture-drizzle-fg.png" | prepend: site.baseurl }}" />
+		<img src="{{ "/img/weather/texture-drizzle-bg.png" | prepend: site.baseurl }}" />
 	</div>
     <div>
 		<div class="slideshow">
@@ -65,11 +65,11 @@ window.addEventListener('resize', function(event){
 				<div class="slide__element slide__element--temp">34°<small>C</small></div>
 			</div>
 			<nav class="slideshow__nav">
-				<a class="nav-item" href="#slide-1"><i class="r-icon icon--rainy"></i><span>10/24</span></a>
-				<a class="nav-item" href="#slide-2"><i class="r-icon icon--drizzle"></i><span>10/25</span></a>
-				<a class="nav-item" href="#slide-3"><i class="r-icon icon--sun"></i><span>10/26</span></a>
-				<a class="nav-item" href="#slide-5"><i class="r-icon icon--storm"></i><span>10/28</span></a>
-				<a class="nav-item" href="#slide-4"><i class="r-icon icon--radioactive"></i><span>10/27</span></a>
+				<a class="nav-item" href="#slide-1"><i class="r-icon icon--rainy"></i><span>Rain</span></a>
+				<a class="nav-item" href="#slide-2"><i class="r-icon icon--drizzle"></i><span>Drizzle</span></a>
+				<a class="nav-item" href="#slide-3"><i class="r-icon icon--sun"></i><span>Sun</span></a>
+				<a class="nav-item" href="#slide-5"><i class="r-icon icon--storm"></i><span>Storm</span></a>
+				<a class="nav-item" href="#slide-4"><i class="r-icon icon--radioactive"></i><span>Fallout</span></a>
 			</nav>
 		</div>
 		<p class="nosupport">Sorry, but your browser does not support WebGL!</p>
