@@ -23,20 +23,22 @@ window.addEventListener('resize', function(event){
 <!-- Page Header -->
 <header class="demo-1">
     <div class="image-preload">
-		<img src="{{ "/img/drop-color.png" | prepend: site.baseurl }}" alt="">
-		<img src="{{ "/img/drop-alpha.png" | prepend: site.baseurl }}" alt="">
-		<img src="{{ "/img/weather/texture-rain-fg.png" | prepend: site.baseurl }}" />
-		<img src="{{ "/img/weather/texture-rain-bg.png" | prepend: site.baseurl }}" />
-		<img src="{{ "/img/weather/texture-sun-fg.png" | prepend: site.baseurl }}" />
-		<img src="{{ "/img/weather/texture-sun-bg.png" | prepend: site.baseurl }}" />
-		<img src="{{ "/img/weather/texture-fallout-fg.png" | prepend: site.baseurl }}" />
-		<img src="{{ "/img/weather/texture-fallout-bg.png" | prepend: site.baseurl }}" />
-		<img src="{{ "/img/weather/texture-drizzle-fg.png" | prepend: site.baseurl }}" />
-		<img src="{{ "/img/weather/texture-drizzle-bg.png" | prepend: site.baseurl }}" />
+		<img id="drop-color" src="{{ "/img/drop-color.png" | prepend: site.baseurl }}" alt="">
+		<img id="drop-alpha" src="{{ "/img/drop-alpha.png" | prepend: site.baseurl }}" alt="">
+		<img id="texture-rain-fg" src="{{ "/img/weather/texture-rain-fg.png" | prepend: site.baseurl }}" />
+		<img id="texture-rain-bg" src="{{ "/img/weather/texture-rain-bg.png" | prepend: site.baseurl }}" />
+		<img id="texture-storm-lightning-fg" src="{{ "img/weather/texture-storm-lightning-fg.png" | prepend: site.baseurl }}" />
+		<img id="texture-storm-lightning-bg" src="{{ "img/weather/texture-storm-lightning-bg.png" | prepend: site.baseurl }}" />
+		<img id="texture-sun-fg" src="{{ "/img/weather/texture-sun-fg.png" | prepend: site.baseurl }}" />
+		<img id="texture-sun-bg" src="{{ "/img/weather/texture-sun-bg.png" | prepend: site.baseurl }}" />
+		<img id="texture-fallout-fg" src="{{ "/img/weather/texture-fallout-fg.png" | prepend: site.baseurl }}" />
+		<img id="texture-fallout-bg" src="{{ "/img/weather/texture-fallout-bg.png" | prepend: site.baseurl }}" />
+		<img id="texture-drizzle-fg" src="{{ "/img/weather/texture-drizzle-fg.png" | prepend: site.baseurl }}" />
+		<img id="texture-drizzle-bg" src="{{ "/img/weather/texture-drizzle-bg.png" | prepend: site.baseurl }}" />
 	</div>
     <div>
 		<div class="slideshow">
-			<canvas width="1" height="1" id="container" 
+			<canvas width="1" height="1" id="canvas-container" 
                 style="position:absolute;width: 100%;width: 100vw;height: 100vh;">
             </canvas>
 			<!-- Heavy Rain -->
