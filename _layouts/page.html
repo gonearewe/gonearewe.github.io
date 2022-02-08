@@ -2,19 +2,80 @@
 layout: default
 ---
 
+<script>
+function fitToContainer(canvas){
+  // Make it visually fill the positioned parent
+  canvas.style.width ='100%';
+  canvas.style.height='100%';
+  // ...then set the internal size to match
+//   canvas.width  = canvas.offsetWidth;
+//   canvas.height = canvas.offsetHeight;
+}
+
+window.addEventListener('resize', function(event){
+  let canvas = document.querySelector('canvas');
+  fitToContainer(canvas);
+});
+</script>
+<script src="{{ "/js/rain.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/time.js" | prepend: site.baseurl }}"></script>
+
 <!-- Page Header -->
-<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
-                    <!--<hr class="small">-->
-                    <span class="subheading">{{ page.description }}</span>
-                </div>
-            </div>
-        </div>
-    </div>
+<header class="demo-1">
+    <div class="image-preload">
+		<img id="drop-color" src="{{ "/img/drop-color.png" | prepend: site.baseurl }}" alt="">
+		<img id="drop-alpha" src="{{ "/img/drop-alpha.png" | prepend: site.baseurl }}" alt="">
+		<img id="texture-rain-fg" src="{{ "/img/weather/texture-rain-fg.png" | prepend: site.baseurl }}" />
+		<img id="texture-rain-bg" src="{{ "/img/weather/texture-rain-bg.png" | prepend: site.baseurl }}" />
+		<img id="texture-storm-lightning-fg" src="{{ "/img/weather/texture-storm-lightning-fg.png" | prepend: site.baseurl }}" />
+		<img id="texture-storm-lightning-bg" src="{{ "/img/weather/texture-storm-lightning-bg.png" | prepend: site.baseurl }}" />
+		<img id="texture-sun-fg" src="{{ "/img/weather/texture-sun-fg.png" | prepend: site.baseurl }}" />
+		<img id="texture-sun-bg" src="{{ "/img/weather/texture-sun-bg.png" | prepend: site.baseurl }}" />
+		<img id="texture-fallout-fg" src="{{ "/img/weather/texture-fallout-fg.png" | prepend: site.baseurl }}" />
+		<img id="texture-fallout-bg" src="{{ "/img/weather/texture-fallout-bg.png" | prepend: site.baseurl }}" />
+		<img id="texture-drizzle-fg" src="{{ "/img/weather/texture-drizzle-fg.png" | prepend: site.baseurl }}" />
+		<img id="texture-drizzle-bg" src="{{ "/img/weather/texture-drizzle-bg.png" | prepend: site.baseurl }}" />
+	</div>
+    <div>
+		<div class="slideshow">
+			<canvas width="1" height="1" id="canvas-container" 
+                style="position:absolute;width: 100%;width: 100vw;height: 100vh;">
+            </canvas>
+			<!-- Heavy Rain -->
+			<div class="slide" id="slide-1" data-weather="rain">
+				<div class="slide__element slide__element--date">Sunday, 24 of October 2043</div>
+				<div class="slide__element slide__element--temp">12°<small>C</small></div>
+			</div>
+			<!-- Drizzle -->
+			<div class="slide" id="slide-2" data-weather="drizzle">
+				<div class="slide__element slide__element--date">Saturday, 25 of October 2043</div>
+				<div class="slide__element slide__element--temp">18°<small>C</small></div>
+			</div>
+			<!-- Sunny -->
+			<div class="slide" id="slide-3" data-weather="sunny">
+				<div class="slide__element slide__element--date">Monday, 26 of October 2043</div>
+				<div class="slide__element slide__element--temp">25°<small>C</small></div>
+			</div>
+			<!-- Heavy rain -->
+			<div class="slide" id="slide-5" data-weather="storm">
+				<div class="slide__element slide__element--date">Wednesday, 28 of October 2043</div>
+				<div class="slide__element slide__element--temp">10°<small>C</small></div>
+			</div>
+			<!-- Fallout (greenish overlay with slightly greenish/yellowish drops) -->
+			<div class="slide" id="slide-4" data-weather="fallout">
+				<div class="slide__element slide__element--date">Tuesday, 27 of October 2043</div>
+				<div class="slide__element slide__element--temp">20°<small>C</small></div>
+			</div>
+			<nav class="slideshow__nav">
+				<a class="nav-item" href="#slide-1"><i class="r-icon icon--rainy"></i><span>Rain</span></a>
+				<a class="nav-item" href="#slide-2"><i class="r-icon icon--drizzle"></i><span>Drizzle</span></a>
+				<a class="nav-item" href="#slide-3"><i class="r-icon icon--sun"></i><span>Sun</span></a>
+				<a class="nav-item" href="#slide-5"><i class="r-icon icon--storm"></i><span>Storm</span></a>
+				<a class="nav-item" href="#slide-4"><i class="r-icon icon--radioactive"></i><span>Fallout</span></a>
+			</nav>
+		</div>
+		<p class="nosupport">Sorry, but your browser does not support WebGL!</p>
+	</div>
 </header>
 
 <!-- Main Content -->
