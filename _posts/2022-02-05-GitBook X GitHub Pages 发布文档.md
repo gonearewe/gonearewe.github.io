@@ -63,7 +63,7 @@ GitBook 对电子书的目录结构有所要求，
 它主要要求一个 `SUMMARY.md` 作为索引（即目录）文件，一个 `README.md` 作首页，
 外加一个 `book.json` 作配置文件。`book.json` 主要可以用来增加插件，我的文件内容可供参考：
 
-```json
+```js
 {
 	"title": "Easy Testing Documentation",
 	"plugins" : [
