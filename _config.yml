@@ -17,7 +17,7 @@ sidebar-avatar: /img/about-me.jpg      # use absolute URL, seeing it's used in b
 
 
 # SNS settings
-RSS: false
+RSS: true
 # weibo_username:     qiubaiying
 zhihu_username:     gonearewe
 github_username:    gonearewe
