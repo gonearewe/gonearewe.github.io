@@ -67,6 +67,7 @@ GitBook 对电子书的目录结构有所要求，
 {
 	"title": "Easy Testing Documentation",
 	"plugins" : [
+		"anchors",
 		"-search", 
 		"-lunr", 
 		"search-pro",
@@ -100,7 +101,7 @@ GitBook 对电子书的目录结构有所要求，
 }	
 ```
 
-我找来找去，好用的插件也就上面这些。其中 `search-pro` 支持 Unicode 搜索（包括中文搜索），
+我找来找去，好用的插件也就上面这些。其中 `anchors` 为标题（`<h1>`、`<h2>`等）增加锚点。`search-pro` 支持 Unicode 搜索（包括中文搜索），
 为了启用它，我们还需要关闭默认的搜索插件 `search` 与 `lunr` （通过在插件名前加减号）。
 `github` 会增加一个向自定义的仓库跳转的链接，仓库地址可以在 `pluginsConfig` 中配置。
 `splitter` 会在侧边目录栏与主体页面间增加一个分割线，可通过左右拖拽这个分割线改变侧边栏宽度。
